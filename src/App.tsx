@@ -2,7 +2,12 @@ import React from "react";
 import Button from "./components/Button";
 
 function App() {
-  return <Button>Example</Button>;
+  return (
+    <>
+      <Button color="violet">Example</Button>
+      <Button color="gray">Example</Button>
+    </>
+  );
 }
 
 export default App;
