@@ -3,13 +3,13 @@ import { styled } from '../stitches.config';
 const Button = styled('button', {
     backgroundColor: 'gainsboro',
     borderRadius: '9999px',
-    fontSize: '13px',
+    fontSize: "$base",
     lineHeight: '1',
-    fontWeight: 500,
-    paddingTop: '10px',
-    paddingBottom: '10px',
-    paddingLeft: '16px',
-    paddingRight: '16px',
+    fontWeight: "$400",
+    paddingTop: '$3',
+    paddingBottom: '$3',
+    paddingLeft: '$4',
+    paddingRight: '$4',
     border: '0',
     ':hover': {
         transform: 'translateY(-2px)',
@@ -18,16 +18,16 @@ const Button = styled('button', {
       variants: {
         color: {
           violet: {
-            backgroundColor: 'blueviolet',
+            backgroundColor: '$purple600',
             color: 'white',
             ':hover': {
-              backgroundColor: 'darkviolet',
+              backgroundColor: '$purple700',
             },
           },
           gray: {
-            backgroundColor: 'gainsboro',
+            backgroundColor: '$gray500',
             ':hover': {
-              backgroundColor: 'lightgray',
+              backgroundColor: '$gray200',
             },
           },
         },
