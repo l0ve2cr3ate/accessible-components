@@ -52,5 +52,10 @@
     "babel-loader": "^8.1.0",
     "husky": "^4.3.0",
     "react-is": "^16.13.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "CI=true npm test"
+    }
   }
 }
