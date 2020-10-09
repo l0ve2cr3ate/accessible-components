@@ -7,5 +7,6 @@ module.exports = {
     '@storybook/addon-a11y',
     '@storybook/addon-actions',
     '@storybook/addon-storysource',
+    '@storybook/addon-controls',
   ],
 };
