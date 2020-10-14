@@ -1,17 +1,23 @@
 import React from "react";
-import Button from "./components/button/Button";
-import Card from "./components/card/Card";
+import { Switch, Route } from 'react-router';
+import Sidebar from './docs/components/sidebar/sidebar';
+import DocsButton from "./docs/components/button/docs-button";
+import DocsCard from "./docs/components/card/docs-card";
 
-function App() {
+
+const App=() =>{
   return (
-    <>
-      <Button color="violet">Example</Button>
-      <Button color="gray">Example</Button>
-      <Card>
-       <h2>card-header</h2>
-       <p>This is an example of the card text</p>
-      </Card>
-    </>
+    <div data-testid="app">
+     <Sidebar/>
+       <Switch>
+          <Route exact path="/button">
+            <DocsButton />
+          </Route>
+          <Route exact path="/card">
+            <DocsCard/>
+          </Route>
+        </Switch>
+     </div>
   );
 }
 
