@@ -1,8 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import Sidebar from './docs/components/sidebar/sidebar';
-import DocsButton from './docs/components/button/docs-button';
-import DocsCard from './docs/components/card/docs-card';
+import Example from './docs/components/example/example';
+import Button from './components/button/Button';
+import Card from './components/card/Card';
 import { styled } from './stitches.config';
 
 const AppContainer = styled('div', {
@@ -14,12 +15,15 @@ const App = () => {
     <AppContainer data-testid='app'>
       <Sidebar />
       <Switch>
-        <Route exact path='/button'>
-          <DocsButton />
-        </Route>
-        <Route exact path='/card'>
-          <DocsCard />
-        </Route>
+        <Example>
+          <Route exact path='/button'>
+            <Button color='violet'>Example</Button>
+            <Button color='gray'>Example</Button>
+          </Route>
+          <Route exact path='/card'>
+            <Card>Hello</Card>
+          </Route>
+        </Example>
       </Switch>
     </AppContainer>
   );
