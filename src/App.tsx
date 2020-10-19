@@ -5,6 +5,7 @@ import Example from './docs/components/example/example';
 import Button from './components/button/Button';
 import Card from './components/card/Card';
 import { styled } from './stitches.config';
+import CardHeader from './components/card/card-header';
 
 const AppContainer = styled('div', {
   fontFamily: 'Roboto',
@@ -21,7 +22,9 @@ const App = () => {
             <Button color='gray'>Example</Button>
           </Route>
           <Route exact path='/card'>
-            <Card>Hello</Card>
+            <Card>
+              <CardHeader to='#' title='Card-Header'></CardHeader>
+            </Card>
           </Route>
         </Example>
       </Switch>
