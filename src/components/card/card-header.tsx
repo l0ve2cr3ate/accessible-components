@@ -4,6 +4,15 @@ import { styled } from '../../stitches.config';
 
 const StyledLink = styled(Link, {
   textDecoration: 'none',
+  color: '$gray600',
+  '::after': {
+    content: '""',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+  },
 });
 
 export type CardHeaderProps = {
