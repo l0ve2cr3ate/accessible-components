@@ -15,10 +15,11 @@ const ContainerCard = styled('div', {
 
 export type CardProps = {
   children: React.ReactNode;
+  css?: string;
 };
 
-const Card: FC<CardProps> = ({ children }) => {
-  return <ContainerCard>{children}</ContainerCard>;
+const Card: FC<CardProps> = ({ children, css }) => {
+  return <ContainerCard css={css}>{children}</ContainerCard>;
 };
 
 export default Card;
