@@ -1,6 +1,7 @@
+import React, { FC } from 'react';
 import { styled } from '../../stitches.config';
 
-const Button = styled('button', {
+const ButtonContainer = styled('button', {
   backgroundColor: 'gainsboro',
   borderRadius: '9999px',
   fontSize: '$base',
@@ -33,5 +34,23 @@ const Button = styled('button', {
     },
   },
 });
+
+type ButtonProps = {
+  children?: React.ReactNode;
+  color?:
+    | 'gray'
+    | 'violet'
+    | { initial?: 'gray' | 'violet' | undefined }
+    | undefined;
+  onClick?: () => void;
+};
+
+const Button: FC<ButtonProps> = ({ children, onClick, color }) => {
+  return (
+    <ButtonContainer onClick={onClick} color={color}>
+      {children}
+    </ButtonContainer>
+  );
+};
 
 export default Button;

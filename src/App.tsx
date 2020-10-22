@@ -18,8 +18,8 @@ const App = () => {
       <Switch>
         <Example>
           <Route exact path='/button'>
-            <Button color='violet'>Example</Button>
             <Button color='gray'>Example</Button>
+            <Button color='violet'>Example</Button>
           </Route>
           <Route exact path='/card'>
             <Card>

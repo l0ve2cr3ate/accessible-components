@@ -7,18 +7,25 @@ export default {
   title: 'Button with Stitches',
   component: Button,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    color: {
+      control: {
+        type: 'inline-radio',
+        options: ['violet', 'gray'],
+      },
+    },
   },
 } as Meta;
 
-const Template: Story<{}> = (args) => <Button {...args}>Hello</Button>;
+const Template: Story<{}> = (args) => <Button {...args} />;
 
 export const Violet = Template.bind({});
 Violet.args = {
   color: 'violet',
+  children: 'example',
 };
 
 export const Gray = Template.bind({});
 Gray.args = {
   color: 'gray',
+  children: 'example',
 };
