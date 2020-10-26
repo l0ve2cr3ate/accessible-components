@@ -7,6 +7,9 @@ import { CardHeaderProps } from './CardHeader';
 export default {
   title: 'Card-header',
   component: CardHeader,
+  argTypes: {
+    to: { control: null },
+  },
 } as Meta;
 
 const Template: Story<CardHeaderProps> = (args) => (
@@ -18,5 +21,4 @@ const Template: Story<CardHeaderProps> = (args) => (
 export const Title = Template.bind({});
 Title.args = {
   title: 'Cardheader-title',
-  to: undefined,
 };
