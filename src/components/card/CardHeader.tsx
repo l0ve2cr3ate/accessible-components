@@ -16,7 +16,13 @@ const StyledLink = styled(Link, {
 });
 
 export type CardHeaderProps = {
+  /**
+   * Make the title clickable
+   */
   to?: string;
+  /**
+   * Title of the card
+   */
   title: string;
 };
 

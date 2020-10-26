@@ -23,7 +23,7 @@ const App = () => {
           </Route>
           <Route exact path='/card'>
             <Card>
-              <CardHeader to='#' title='Card-Header'></CardHeader>
+              <CardHeader title='Card-Header'></CardHeader>
             </Card>
           </Route>
         </Example>

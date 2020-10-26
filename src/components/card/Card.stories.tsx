@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react/types-6-0';
 import Card from './Card';
 
 export default {
@@ -7,4 +7,9 @@ export default {
   component: Card,
 } as Meta;
 
-export const Primary = () => <Card>Example Card</Card>;
+const Template: Story<{}> = (args) => <Card {...args} />;
+
+export const Basic = Template.bind({});
+Basic.args = {
+  children: 'example',
+};

@@ -35,7 +35,7 @@ const ButtonContainer = styled('button', {
   },
 });
 
-type ButtonProps = {
+export type ButtonProps = {
   children?: React.ReactNode;
   color?:
     | 'gray'

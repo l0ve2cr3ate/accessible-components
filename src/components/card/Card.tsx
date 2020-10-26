@@ -14,7 +14,7 @@ const ContainerCard = styled('div', {
 });
 
 export type CardProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   css?: string;
 };
 
