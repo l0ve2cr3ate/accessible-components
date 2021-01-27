@@ -14,7 +14,7 @@ const ButtonContainer = styled('button', {
   border: '0',
   ':hover': {
     transform: 'translateY(-2px)',
-    boxShadow: '0 10px 25px rgba(0, 0, 0, .3)',
+    boxShadow: '0 0.625rem 1.5625rem rgba(0, 0, 0, .3)',
   },
   variants: {
     color: {
@@ -28,7 +28,8 @@ const ButtonContainer = styled('button', {
       gray: {
         backgroundColor: '$gray500',
         ':hover': {
-          backgroundColor: '$gray200',
+          backgroundColor: '$gray600',
+          color: '#fff',
         },
       },
     },

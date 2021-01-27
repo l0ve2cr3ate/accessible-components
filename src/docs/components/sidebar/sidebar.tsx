@@ -8,20 +8,20 @@ const ContainerSidebar = styled('nav', {
   bottom: 0,
   left: 0,
   overflow: 'auto',
-  width: '15.625rem',
+  width: '11.625rem',
   background: '$purple700',
   color: '#fff',
 });
 
 const LogoContainer = styled('div', {
-  fontSize: '$3xl',
+  fontSize: '$2xl',
   padding: '1.875rem 3.125rem $5 $5',
 });
 
 const NavList = styled('ul', {
   listStyleType: 'none',
   lineHeight: 2,
-  fontSize: '$xl',
+  fontSize: '$l',
 });
 
 const LineSeperator = styled('hr', {
@@ -38,7 +38,7 @@ const StyledLink = styled(Link, {
   textDecoration: 'none',
 });
 
-const logoTitle = 'Accessible components';
+const logoTitle = 'Accessible Components';
 const btnNavItem = 'Button';
 const cardNavItem = 'Card';
 

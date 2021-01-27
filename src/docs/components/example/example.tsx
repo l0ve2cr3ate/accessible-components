@@ -4,6 +4,7 @@ import { styled } from '../../../stitches.config';
 const ExampleContainer = styled('div', {
   display: 'flex',
   justifyContent: 'center',
+  marginTop: '5rem',
 });
 
 export type ExampleProps = {
